@@ -1,3 +1,16 @@
 An LLM, also known as a (Large Language Model) is a type of neural network which takes in huge amounts of data to train itself, after training the LLM can generate text in all sorts of languages which also include coding languages like: C, Javascript and Python. the data it takes is usually taken from the internet, people that develop and manage LLM's are scowering the internet for texts which they can feed their learning neural network, The LLM then processes all this data to learn grammar, contexts and references and even emotion. after it has learned enough you can use an GPT also known as a Generative pre-trained Transformer, which calculates and predicts the most likely word that is to come after another one in a sentence, things like a GPT can be used as an AI tool, think of ChatGPT, Grok and Copilot, nowadays they are regularly used to obtain information without having to search all over the internet.
 
 However AI does pose some risks for developers and programmers, since AI can generate code efficiently it may be possible that manual programming might become obsolete which could make the job of a programmer less relevant in the future.
+
+
+Reflectie:
+Waar liep ik vast:
+De opdrachten gingen best goed, ik liep niet ergens vast. behalve misschien het uitleggen van een LLM
+
+Wat kon AI goed doen:
+AI kan goed dingen uitleggen, stylen en simpele functionaliteit inplementeren.
+
+wat kon AI niet goed doen:
+AI heeft moeite met geavanceerde functionaliteit zoals hitboxes en optellen
+
+Ik hoefde zelf niks op te lossen.
