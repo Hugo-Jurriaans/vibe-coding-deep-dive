@@ -56,23 +56,36 @@ sequenceDiagram
 
 DIAGRAM 3 (USECASE)
 ```mermaid
-usecaseDiagram
-    actor Lid
-    actor Bibliothecaris
-    actor Beheerder
+flowchart LR
+    Lid[Lid]
+    Bibliothecaris[Bibliothecaris]
+    Beheerder[Beheerder]
 
-    Lid --> (Zoeken naar boeken)
-    Lid --> (Boek lenen)
-    Lid --> (Boek inleveren)
-    Lid --> (Reservering maken)
-    Lid --> (Account bekijken)
+    UC1((Zoeken naar boeken))
+    UC2((Boek lenen))
+    UC3((Boek inleveren))
+    UC4((Reservering maken))
+    UC5((Account bekijken))
 
-    Bibliothecaris --> (Boek registreren)
-    Bibliothecaris --> (Uitlening beheren)
-    Bibliothecaris --> (Inlevering verwerken)
-    Bibliothecaris --> (Leden beheren)
+    UC6((Boek registreren))
+    UC7((Uitlening beheren))
+    UC8((Inlevering verwerken))
+    UC9((Leden beheren))
 
-    Beheerder --> (Gebruikers beheren)
-    Beheerder --> (Systeeminstellingen aanpassen)
+    UC10((Gebruikers beheren))
+    UC11((Systeeminstellingen aanpassen))
+
+    Lid --> UC1
+    Lid --> UC2
+    Lid --> UC3
+    Lid --> UC4
+    Lid --> UC5
+
+    Bibliothecaris --> UC6
+    Bibliothecaris --> UC7
+    Bibliothecaris --> UC8
+    Bibliothecaris --> UC9
+
+    Beheerder --> UC10
 ```
 
