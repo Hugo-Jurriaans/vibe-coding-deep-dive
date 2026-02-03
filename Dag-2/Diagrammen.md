@@ -88,4 +88,17 @@ flowchart LR
 
     Beheerder --> UC10
 ```
+```mermaid
+timeline
+    title Geschiedenis van de Bibliotheek
+
+    1800 : Eerste openbare bibliotheken ontstaan
+    1850 : Bibliotheken worden toegankelijk voor het grote publiek
+    1900 : Introductie van kaartcatalogi
+    1950 : Professionalisering van bibliotheekdiensten
+    1980 : Digitale catalogi doen hun intrede
+    2000 : Online zoeken en reserveren van boeken
+    2010 : E-books en digitale media beschikbaar
+    2020 : Volledig digitale bibliotheekdiensten en apps
+```
 
