@@ -35,3 +35,22 @@ erDiagram
     BOEK ||--o{ UITLENING : "wordt uitgeleend"
     LID ||--o{ UITLENING : "leent"
 ```
+
+DIAGRAM 2 (Sequence)
+```mermaid
+sequenceDiagram
+    participant Gebruiker
+    participant Frontend
+    participant API
+    participant Database
+
+    Gebruiker->>Frontend: Klikt "Leen boek"
+    Frontend->>API: POST /loans (boek_id, lid_id)
+    API->>Database: Controleer beschikbaarheid boek
+    Database-->>API: Boek beschikbaar
+    API->>Database: Maak uitlening aan
+    Database-->>API: Uitlening opgeslagen
+    API-->>Frontend: 201 Created (uitlening)
+    Frontend-->>Gebruiker: Bevestiging getoond
+```
+
