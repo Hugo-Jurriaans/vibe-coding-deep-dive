@@ -1,3 +1,4 @@
+DIAGRAM 1 (ERD)
 ```mermaid
 erDiagram
     BOEK {
