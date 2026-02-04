@@ -1,4 +1,18 @@
-Project name: Runes of the Reel
+Project naam: Web-hooked
 
-Description: This game is about fishing, by catching fish you can sell the fish for money and buy upgrade to catch larger rarer and mutated fish which would sell for more money, buy better rods and new baits. and finish the fish-o-pedia.
+Beschrijving: 
+Web-Hooked is een vissersspel waarin jij vissen vangt door je hengellijn te gooien en na een kleine minigame een vis vangt, deze vis verkoop jij voor geld waarmee jij verbeteringen en uitrusting kan kopen met hogere qualiteit. waarmee jij zeldzamere en/of grotere vissen kan vangen.
 
+Doelgroep: Videogamers. 6+
+
+Scope:
+- volledige gameplay-loop
+- upgrades
+- save / load
+- uitrusting
+- early / mid / late game zones
+
+Out of Scope:
+- encyclopedia
+- schatten / schatkisten
+- alternatieve plekken
