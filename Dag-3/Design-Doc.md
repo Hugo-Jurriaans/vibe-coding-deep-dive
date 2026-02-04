@@ -82,175 +82,109 @@ Architecture
 Single Game State Object
 Systems read from state, don’t mutate randomly
 Renderer never changes game data
-Suggested systems
+
+Suggested systems:
 
 Input
-
 Game State
-
 Fishing Logic
-
 Progression
-
 Renderer
-
 Audio
-
 Save/Load
-
 Data-Driven Design
-
 Fish defined in JSON-like objects
-
 Locations defined by data, not code
-
 Easier balancing and expansion
 
 5. Gameplay Design Choices
 Fishing Mechanics
-
 Best web-friendly options:
-
 Timing bars
-
 Tension meters
-
 Click-and-hold interactions
-
 Pattern recognition
 
 Avoid:
-
 Twitch-heavy reactions
-
 Physics-heavy line simulation
 
-Progression
-
-Recommended:
-
+Recommended Progression styles: 
 Content-based progression
-
 Light stat upgrades
-
 Collection-driven motivation
 
 Examples:
-
 Fish journal
-
 Rare fish chances
-
 Gear with simple modifiers
-
 Session Length
 
 One fishing attempt: ~20–40 seconds
-
 One session: ~2–5 minutes
-
 Always allow “one more cast”
 
 6. Visual & Styling Direction
 🎨 Best-Fit Style: Stylized 2D (Cozy / Indie)
+
 Why this works:
-
 Low performance cost
-
 Timeless look
-
 Forgiving on low-res screens
-
 Fits fishing emotionally
-
 Art Direction Recommendations
 Color Palette
-
 Blues, teals, greens
-
 Warm highlights (sunset orange, soft yellow)
-
 Low contrast, calm saturation
-
 Shapes
-
 Rounded UI elements
-
 Soft silhouettes
 
 Avoid sharp, aggressive angles
 
-UI Style
-
+UI Style:
 Large readable buttons
-
 Minimal text
-
 Icon + text where possible
-
 Subtle animations (fade, slide, bob)
 
-Animation Style
-
+Animation Style:
 Slow, looping water motion
-
 Gentle bobbing of objects
-
 No sudden camera movement
-
 Fonts
-
 Friendly sans-serif
-
 Optional handwritten style for titles
-
 Avoid ultra-thin fonts
 
 7. Audio Design Guidelines
-
 Ambient water sounds
-
 Soft reel clicks
-
 Clear bite sound
-
 Audio feedback is more important than visuals for fishing
-
-Rule
-
-If you close your eyes, the game should still feel good.
 
 8. Scope Control Rules (Very Important)
 Always Ask:
-
 Does this improve the fishing loop?
-
 Does this add calm or stress?
-
 Is this readable in 1 second?
 
 Never Add:
-
 Features that only add complexity
-
 Systems you can’t test easily
-
 Content before the core loop is fun
 
 9. Definition of “Done”
-
 The game is ready when:
-
 The first fishing attempt feels good
-
 Progress saves correctly
-
 Visual style is consistent
-
 Players understand it without explanation
 
-10. Final Design Rule (The Big One)
-
+11. Final Design Rule (The Big One)
 Fishing games succeed on feel, not realism.
+
+END OF MANUAL
 
 If something feels good but isn’t realistic — keep it.
