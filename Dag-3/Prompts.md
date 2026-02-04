@@ -4,3 +4,9 @@ Can you make 6 different use-stories for my game? use the format: As a (player o
 
 For Design Doc
 lets plan on how we are going to make this fishing game, I would like to do it as a Website game, so we have to use HTML / CSS / Javascript, what risks could that give us? what kind of styling should we use? and what kind of choices should we make in the process of building this game?
+
+For Diagrams:
+
+could you make a roadmap for this game so that I have clear visual on what to work on first? make sure to use mermaid so I can use it on a github markdown file.
+
+can you make a mermaid diagram on the dataflow / gameplay loop of my game? make sure to write it so I can use it on Github
