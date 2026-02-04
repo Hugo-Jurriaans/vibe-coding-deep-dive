@@ -56,45 +56,35 @@ Dataflow chart:
 
 ```mermaid
 flowchart LR
-    %% User Input
-    UI[Player Input Mouse / Touch] --> INPUT[Input Handler]
+    UI[Player Input] --> INPUT[Input Handler]
 
-    %% Game State
-    INPUT --> STATE[Game State Manager]
+    INPUT --> STATE[Game State]
     STATE --> LOOP[Game Loop]
 
-    %% Core Systems
     LOOP --> FISHING[Fishing System]
-    LOOP --> UIRENDER[UI Renderer]
+    LOOP --> UIRENDER[UI System]
     LOOP --> WORLD[World System]
 
-    %% Fishing Flow
     FISHING --> CAST[Casting Logic]
-    CAST --> BOBBER[Bobber Position]
-    BOBBER --> BITE[Fish Bite Timer]
-    BITE --> REEL[Reel Mini-Game]
+    CAST --> BOBBER[Bobber State]
+    BOBBER --> BITE[Fish Bite Logic]
+    BITE --> REEL[Reel Minigame]
     REEL --> RESULT[Catch Result]
 
-    %% Data Updates
-    RESULT --> INVENTORY[Inventory and Rewards]
-    INVENTORY --> PROGRESSION[Progression System]
+    RESULT --> INVENTORY[Inventory]
+    INVENTORY --> PROGRESSION[Progression]
     PROGRESSION --> JOURNAL[Fish Journal]
 
-    %% Rendering
     WORLD --> RENDER[Canvas Renderer]
     FISHING --> RENDER
     UIRENDER --> RENDER
 
-    %% Persistence
-    PROGRESSION --> SAVE[Save System (localStorage)]
+    PROGRESSION --> SAVE[Save System]
     SAVE --> LOAD[Load System]
     LOAD --> STATE
 
-    %% Audio
     FISHING --> AUDIO[Audio System]
     UIRENDER --> AUDIO
 
-    %% Feedback Loop
     RENDER --> LOOP
-
 ```
