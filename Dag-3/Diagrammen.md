@@ -57,7 +57,7 @@ Dataflow chart:
 ```mermaid
 flowchart LR
     %% User Input
-    UI[Player Input (Mouse / Touch)] --> INPUT[Input Handler]
+    UI[Player Input Mouse / Touch] --> INPUT[Input Handler]
 
     %% Game State
     INPUT --> STATE[Game State Manager]
